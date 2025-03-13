@@ -7,25 +7,53 @@
     <style>
         body {
             text-align: center;
-            font-family: Arial, sans-serif;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            background:lightblue;
         }
         .login-box {
             max-width: 400px;
             margin: auto;
             padding: 20px;
-            background: #f4f4f4; 
+            background-color: rgb(57, 156, 156);
             border-radius: 10px;
-            box-shadow: 0px 0px 10px gray;
+            box-shadow: 2px rgb(89, 201, 239);
+
         }
+       a {
+        text-decoration: none;
+        color: rgb(251, 21, 21);
+        font-style: italic;
+       }
+       p {
+              font-style: italic;
+       }
+       button{
+              background-color:whitesmoke;
+              color: rgb(20, 3, 3);
+              padding: 10px 20px;
+              border-radius: 5px;
+              cursor: pointer;
+       }
+       button:hover{
+              background-color: rgb(251, 21, 21);
+              color: white;
+       }
     </style>
 </head>
 <body>
 
     <div class="login-box">
+        <div class="flex-container">       
+            <img src="user.png.png" class="rounded-circle" alt="Cinque Terre" width="120px" height="190px"> 
+          </div>
         <h2>Login</h2>
         <form action="login.php" method="post">
-            <input type="text" name="username" placeholder="Username" required><br><br>
-            <input type="password" name="password" placeholder="Password" required><br><br>
+            <div>
+            <input type="text" name="username" placeholder="Username" required></div><br>
+            <div>
+            <input type="password" name="password" placeholder="Password" required></div><br>
+            <div>
+            <input class="form-check-input" type="checkbox" name="remember"> Remember me </div><br>
             <button type="submit">Login</button>
         </form>
         <p>Don't have an account? <a href="register.html">Register</a></p>
